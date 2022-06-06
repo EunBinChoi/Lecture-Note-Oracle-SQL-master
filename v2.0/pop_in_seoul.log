@@ -1,0 +1,52 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on 수 1월 5 16:41:31 2022
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   pop_in_seoul.ctl
+Data File:      pop_in_seoul_wo_comma.csv
+  Bad File:     pop_in_seoul_wo_comma.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table POP_IN_SEOUL2, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+자치구                              FIRST     *   ,  O(") CHARACTER            
+한국인남성                           NEXT     *   ,  O(") CHARACTER            
+한국인여성                           NEXT     *   ,  O(") CHARACTER            
+외국인남성                           NEXT     *   ,  O(") CHARACTER            
+외국인여성                           NEXT     *   ,  O(") CHARACTER            
+고령자                               NEXT     *  WHT O(") CHARACTER            
+
+
+Table POP_IN_SEOUL2:
+  25 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  99072 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            25
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on 수 1월  05 16:41:31 2022
+Run ended on 수 1월  05 16:41:33 2022
+
+Elapsed time was:     00:00:01.82
+CPU time was:         00:00:00.03
