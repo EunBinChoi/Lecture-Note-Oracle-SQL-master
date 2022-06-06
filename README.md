@@ -1,1 +1,1 @@
-# MyLectureNote_SQL
+# LectureNote_SQL
